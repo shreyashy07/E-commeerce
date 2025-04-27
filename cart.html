@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Nike Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navLeft">
+      <img src="./img/sneakers.png" alt="Nike Logo" class="navLogo">
+    </div>
+    <div class="navSearch">
+      <input type="text" placeholder="Search..." class="searchInput">
+      <img src="./img/search.png" alt="Search Icon" class="searchIcon">
+    </div>
+    <div class="navRight">
+      <span class="limitedOffer">Limited Offer!</span>
+    </div>
+  </nav>
+
+  <!-- Cart Section -->
+  <section id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <div class="cartItems">
+        <div class="cartItem">
+            <img src="./img/air.png" alt="Air Force" class="cartImg">
+            <div class="cartDetails">
+                <h3>Air Force</h3>
+                <p>$199 / ₹16,557</p>
+                <button class="removeBtn">Remove</button>
+            </div>
+        </div>
+        <div class="cartItem">
+            <img src="./img/jordan.png" alt="Air Jordan" class="cartImg">
+            <div class="cartDetails">
+                <h3>Air Jordan</h3>
+                <p>$249 / ₹20,667</p>
+                <button class="removeBtn">Remove</button>
+            </div>
+        </div>
+        <!-- Add other cart items similarly -->
+    </div>
+    <div class="cartTotal">
+        <h3>Total: $448 / ₹37,224</h3>
+        <button class="checkoutBtn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+    </div>
+</section>
+  <!-- Footer -->
+  <footer>
+    <div class="footerLeft">
+      <div class="footerMenu">
+        <h2>About Us</h2>
+        <ul>
+          <li>Company</li>
+          <li>Contact</li>
+          <li>Careers</li>
+          <li>Affiliates</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerRight">
+      <h2>Follow Us</h2>
+      <div class="socialIcons">
+        <img src="./img/facebook.png" alt="Facebook" class="socialIcon">
+        <img src="./img/twitter.png" alt="Twitter" class="socialIcon">
+        <img src="./img/instagram.png" alt="Instagram" class="socialIcon">
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    function removeItem(button) {
+      button.parentElement.remove();  // Removes the parent cart item
+    }
+  </script>
+</body>
+</html>

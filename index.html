@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nike Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navLeft">
+      <img src="./img/sneakers.png" alt="Nike Logo" class="navLogo">
+    </div>
+    <div class="navSearch">
+      <input type="text" placeholder="Search..." class="searchInput">
+      <img src="./img/search.png" alt="Search Icon" class="searchIcon">
+    </div>
+    <div class="navRight">
+      <a href="cart.html" class="navLink">Cart</a>
+      <a href="contact.html" class="navLink">Contact</a>
+      <a href="login.html" class="navLink">Login</a>
+      <span class="limitedOffer">Limited Offer!</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <h1>Welcome to Nike Store</h1>
+    <p>Find your perfect shoes</p>
+    <button onclick="window.location.href='select-shoes.html'">Shop Now</button>
+  </section>
+
+  <!-- Select Shoes -->
+  <section id="selectShoes" class="selectShoes">
+    <h2 class="sectionTitle">Select Your Shoes</h2>
+    <div class="shoeGrid">
+      <div class="shoeItem">
+        <img src="./img/air.png" alt="Air Force" class="shoeImg">
+        <h3>Air Force</h3>
+        <p>$199 / ₹16,557</p>
+        <button onclick="window.location.href='cart.html'">Buy Now</button>
+      </div>
+      <div class="shoeItem">
+        <img src="./img/jordan.png" alt="Air Jordan" class="shoeImg">
+        <h3>Air Jordan</h3>
+        <p>$249 / ₹20,667</p>
+        <button onclick="window.location.href='cart.html'">Buy Now</button>
+      </div>
+      <div class="shoeItem">
+        <img src="./img/blazer.png" alt="Blazer" class="shoeImg">
+        <h3>Blazer</h3>
+        <p>$179 / ₹14,887</p>
+        <button onclick="window.location.href='cart.html'">Buy Now</button>
+      </div>
+      <div class="shoeItem">
+        <img src="./img/crater.png" alt="Crater" class="shoeImg">
+        <h3>Crater</h3>
+        <p>$189 / ₹15,747</p>
+        <button onclick="window.location.href='cart.html'">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <img src="./img/shipping.png" alt="Free Shipping" class="featureIcon">
+      <span class="featureTitle">FREE SHIPPING</span>
+      <p class="featureDesc">Free worldwide shipping on all orders.</p>
+    </div>
+    <div class="feature">
+      <img src="./img/return.png" alt="30 Days Return" class="featureIcon">
+      <span class="featureTitle">30 DAYS RETURN</span>
+      <p class="featureDesc">Easy returns within 14 days.</p>
+    </div>
+    <div class="feature">
+      <img src="./img/gift.png" alt="Gift Cards" class="featureIcon">
+      <span class="featureTitle">GIFT CARDS</span>
+      <p class="featureDesc">Give the gift of sneakers!</p>
+    </div>
+    <div class="feature">
+      <img src="./img/contact.png" alt="Contact Us" class="featureIcon">
+      <span class="featureTitle">CONTACT US!</span>
+      <p class="featureDesc">We are here to help you anytime.</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <div class="galleryItem">
+      <h1 class="galleryTitle">Be Yourself!</h1>
+      <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="galleryImg">
+    </div>
+    <div class="galleryItem">
+      <h1 class="galleryTitle">New Life, New Kicks</h1>
+      <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="galleryImg">
+    </div>
+    <div class="galleryItem">
+      <h1 class="galleryTitle">Just Do It!</h1>
+      <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="galleryImg">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footerLeft">
+      <div class="footerMenu">
+        <h2>About Us</h2>
+        <ul>
+          <li>Company</li>
+          <li>Contact</li>
+          <li>Careers</li>
+          <li>Affiliates</li>
+        </ul>
+      </div>
+      <div class="footerMenu">
+        <h2>Products</h2>
+        <ul>
+          <li>Air Force</li>
+          <li>Air Jordan</li>
+          <li>Blazer</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerRight">
+      <h2>Follow Us</h2>
+      <div class="socialIcons">
+        <img src="./img/facebook.png" alt="Facebook" class="socialIcon">
+        <img src="./img/twitter.png" alt="Twitter" class="socialIcon">
+        <img src="./img/instagram.png" alt="Instagram" class="socialIcon">
+      </div>
+    </div>
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>

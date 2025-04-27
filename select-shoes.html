@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Select Your Shoes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navLeft">
+      <img src="./img/sneakers.png" alt="Nike Logo" class="navLogo">
+    </div>
+    <div class="navRight">
+      <a href="cart.html" class="navLink">Cart</a>
+      <a href="contact.html" class="navLink">Contact</a>
+      <a href="login.html" class="navLink">Login</a>
+    </div>
+  </nav>
+
+  <!-- Product Selection -->
+  <section id="selectShoes" class="selectShoes">
+    <h2 class="sectionTitle">Select Your Shoes</h2>
+    <div class="shoeGrid">
+      <div class="shoeItem">
+        <img src="./img/air.png" alt="Air Force" class="shoeImg">
+        <h3>Air Force</h3>
+        <p>$199 / ₹16,557</p>
+        <button onclick="selectProduct('Air Force', 199)">Select</button>
+      </div>
+      <div class="shoeItem">
+        <img src="./img/jordan.png" alt="Air Jordan" class="shoeImg">
+        <h3>Air Jordan</h3>
+        <p>$249 / ₹20,667</p>
+        <button onclick="selectProduct('Air Jordan', 249)">Select</button>
+      </div>
+      <div class="shoeItem">
+        <img src="./img/blazer.png" alt="Blazer" class="shoeImg">
+        <h3>Blazer</h3>
+        <p>$179 / ₹14,887</p>
+        <button onclick="selectProduct('Blazer', 179)">Select</button>
+      </div>
+      <div class="shoeItem">
+        <img src="./img/crater.png" alt="Crater" class="shoeImg">
+        <h3>Crater</h3>
+        <p>$189 / ₹15,747</p>
+        <button onclick="selectProduct('Crater', 189)">Select</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Checkout -->
+  <section class="checkout">
+    <h2>Your Selection</h2>
+    <div id="selectedProduct">
+      <p>Select a product to view details.</p>
+    </div>
+
+    <!-- Checkout Button -->
+    <button id="checkoutButton" onclick="showPaymentOptions()" style="display:none;">Proceed to Checkout</button>
+
+    <!-- Payment Options Modal -->
+    <div id="paymentOptions" style="display:none;">
+      <h3>Select Payment Method</h3>
+      <button onclick="choosePaymentMethod('Credit Card')">Credit Card</button>
+      <button onclick="choosePaymentMethod('PayPal')">PayPal</button>
+      <button onclick="choosePaymentMethod('Google Pay')">Google Pay</button>
+      <button onclick="choosePaymentMethod('Cash on Delivery')">Cash on Delivery</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nike Store</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
